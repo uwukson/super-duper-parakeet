@@ -1,5 +1,5 @@
 #pragma once
-#include "../../dependies/includes.h"
+#include "../../dependencies/includes.h"
 
 class CColor {
 public:
