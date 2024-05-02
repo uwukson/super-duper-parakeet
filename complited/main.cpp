@@ -1,4 +1,4 @@
-#include "dependies/includes.h"
+#include "dependencies/includes.h"
 
 int main()
 {

@@ -165,7 +165,7 @@
     <ClInclude Include=".hpp\console\console.h" />
     <ClInclude Include=".hpp\execute\execute.h" />
     <ClInclude Include=".hpp\is_admin\is_admin.h" />
-    <ClInclude Include="dependies\includes.h" />
+    <ClInclude Include="dependencies\includes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

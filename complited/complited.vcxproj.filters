@@ -44,9 +44,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dependies\includes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include=".hpp\execute\execute.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -63,6 +60,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include=".hpp\console\console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\includes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
