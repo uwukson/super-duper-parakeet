@@ -6,7 +6,21 @@ void CFunctions::download() {
     do {
         CLEAR;
 
-        std::cout << "\n1. Discord\n2. TeamSpeak\n3. Google Chrome\n4. Chromium\n5. Firefox\n6. Visual Studio Code\n7. Visual Studio Professional 2022\n8. Steam\n9. Telegram\n10. .NET Framework\n11. CCleaner\n\n12. back\n\n\ninput: ";
+
+        const char* apps[] = {
+            "Discord", "TeamSpeak", "Google Chrome", "Chromium",
+            "Firefox", "Visual Studio Code", "Visual Studio Professional 2022",
+            "Steam", "Telegram", ".NET Framework", "CCleaner"
+        };
+
+        for (int i = 0; i < sizeof(apps) / sizeof(apps[0]); ++i) {
+            std::cout << i + 1 << ". " << apps[i] << std::endl;
+        }
+
+        std::cout << "\n12. back" << std::endl;
+        std::cout << "\n\ninput: ";
+
+
         std::cin >> choice;
 
         if (choice >= 1 && choice <= 11) {

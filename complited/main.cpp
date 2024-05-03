@@ -15,7 +15,16 @@ int main()
         color->set(CColor::COLORS_CONSOLE::WHITE);
 
         std::wcout << ascii->string_2_wstring(ascii->image) << std::endl;
-        std::cout << "\n\n1: download programms\n2: information\n3: exit\n\ninput: ";
+
+        const char* items[ ] = {
+            "download programms", "information", "exit"
+        };
+
+        for (int i = 0; i < sizeof(items) / sizeof(items[0]); ++i) {
+            std::cout << "\n" << i + 1 << ": " << items[i];
+        }
+        std::cout << "\n\ninput: ";
+
         std::cin >> select_func_;
 
         switch (select_func_) {
